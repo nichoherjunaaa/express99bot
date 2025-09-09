@@ -30,6 +30,10 @@ const config = {
         baseUrl: process.env.BASE_URL || `http://localhost:${process.env.PORT || 3000}`
     },
 
+    webhook: {
+        path: "/api/webhook"
+    },
+
     app: {
         name: "Gemini Telegram Bot",
         version: "1.0.0",
@@ -38,6 +42,7 @@ const config = {
     }
 };
 
+// Validation
 if (!config.telegram.token) throw new Error('TELEGRAM_BOT_TOKEN is required');
 if (!config.gemini.apiKey) throw new Error('GEMINI_API_KEY is required');
 

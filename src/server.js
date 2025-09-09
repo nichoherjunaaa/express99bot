@@ -22,4 +22,8 @@ app.post('/api/webhook', (req, res) => {
     res.status(200).send('OK');
 });
 
+
+botService.start(); 
+
+
 module.exports = app;

@@ -41,6 +41,9 @@ class TelegramBotService {
     handleUpdate(update) {
         return this.bot.processUpdate(update);
     }
+    start() {
+        console.log("🤖 Telegram bot is running in webhook mode!");
+    }
 }
 
 module.exports = TelegramBotService;
