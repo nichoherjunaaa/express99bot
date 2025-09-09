@@ -73,11 +73,6 @@ class TelegramBotService {
     handleUpdate(update) {
         this.bot.processUpdate(update);
     }
-<<<<<<< HEAD
-
-=======
-    
->>>>>>> 674a3f3 (testing deploy bot)
     start() {
         console.log('🤖 Telegram Bot started successfully!');
         console.log('📍 Bot is running and waiting for messages...');
